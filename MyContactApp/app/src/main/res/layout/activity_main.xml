@@ -30,7 +30,7 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="ADD_DATA"
+        android:text="ADD DATA"
         android:id="@+id/button_add"
         android:clickable="true"
         android:onClick="addData"
@@ -53,8 +53,8 @@
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="Age"
         android:id="@+id/textView2"
-        android:layout_alignBottom="@+id/editText_Age"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:layout_alignBottom="@+id/editText_Age"/>
 
     <TextView
         android:layout_width="wrap_content"
@@ -73,4 +73,31 @@
         android:layout_alignTop="@+id/textView3"
         android:layout_alignEnd="@+id/editText_Age"
         android:layout_toEndOf="@+id/button_add" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="View Data"
+        android:id="@+id/button_view"
+        android:layout_alignBottom="@+id/button_add"
+        android:layout_alignParentEnd="true"
+        android:onClick="viewData"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Search"
+        android:id="@+id/button_search"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:onClick="searchMessage"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editSearch"
+        android:layout_below="@+id/button_view"
+        android:layout_alignEnd="@+id/editText_address"
+        android:layout_toEndOf="@+id/button_add"
+        android:hint="Name"/>
 </RelativeLayout>
